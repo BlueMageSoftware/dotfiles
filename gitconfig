@@ -1,0 +1,15 @@
+[push]
+  default = simple
+[color]
+  ui = auto
+[alias]
+  wow = log --all --graph --decorate --oneline --simplify-by-decoration
+  prune = remote update --prune
+  dry-prune = remote prune origin --dry-run
+  uncommit = reset HEAD~1 --soft
+[merge]
+  ff = only
+[fetch]
+  prune = true
+[rebase]
+  autosquash = true
